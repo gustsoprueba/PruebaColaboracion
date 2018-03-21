@@ -12,11 +12,18 @@ package ejemplo;
  */
 public class Ejemplo01 {
     
-    public static void saludarAlPublico(String nombreSaluda){
-        System.out.println("Hola Programacion Visual "+nombreSaluda);//nuevo cambio
-    }
-            
     public static void main(String[] arg){
         saludarAlPublico("Gustavo Sosa");
+    }
+    
+    public static void saludarAlPublico(String nombreSaluda){
+        String variable = devolverNombre();
+        nombreSaluda = nombreSaluda + variable;
+        System.out.println("Hola Programacion Visual "+nombreSaluda);//nuevo cambio
+    }   
+    
+    public static String devolverNombre(){
+        String nombreDevuelto = "jugando";
+        return nombreDevuelto;
     }
 }
