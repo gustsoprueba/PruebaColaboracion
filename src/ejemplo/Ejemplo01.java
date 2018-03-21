@@ -13,7 +13,7 @@ package ejemplo;
 public class Ejemplo01 {
     
     public static void saludarAlPublico(String nombreSaluda){
-        System.out.println("Hola Programacion Visual "+nombreSaluda);
+        System.out.println("Hola Programacion Visual "+nombreSaluda);//nuevo cambio
     }
             
     public static void main(String[] arg){
